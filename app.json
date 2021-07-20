@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/show/show",
+    "pages/edit/edit",
+    "pages/new/new",
+    "pages/destroy/destroy",
+    "pages/profile/profile",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "On Show",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "explore"
+    }, {
+      "pagePath": "pages/new/new",
+      "text": "add"
+    },{
+      "pagePath": "pages/profile/profile",
+      "text": "profile"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
