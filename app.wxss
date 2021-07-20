@@ -1,3 +1,5 @@
+@import '/stylesheets/index';
+
 /**app.wxss**/
 .container {
   height: 100%;
