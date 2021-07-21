@@ -16,14 +16,23 @@
   },
 
   "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle":"white",
     "list": [{
       "pagePath": "pages/index/index",
+      "selectedIconPath": "icons/homepage_black.png",
+      "iconPath": "icons/homepage_pink.png",
       "text": "explore"
     }, {
       "pagePath": "pages/new/new",
+      "selectedIconPath": "icons/plus_black.png",
+      "iconPath": "icons/plus_black.png",
       "text": "add"
     },{
       "pagePath": "pages/profile/profile",
+      "selectedIconPath": "icons/profile_black.png",
+      "iconPath": "icons/profile_black.png",
       "text": "profile"
     }]
   },

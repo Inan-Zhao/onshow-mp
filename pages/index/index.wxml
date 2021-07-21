@@ -1,19 +1,14 @@
-
-
+<view class="container">
   <view wx:if="{{performances.length===0}}">
     <view class="when-empty">There’s nothing here yet!</view> 
   </view>
   <view wx:else>
-    <view wx:for="{{performances}}" wx:key="index" wx:for-item="performance">
-      <view class="card-product">
-        <image src="https://source.unsplash.com/random" />
-        <view class="card-product-infos">
-          <view>{{performance.name}}</view>
-          <text>{{performance.description}}</text>
-        </view>
-        <!-- <button class='btn-view-more' bindtap="goToShowPage">View details</button> -->
+    <view class="cards" wx:for="{{performances}}" wx:key="index" wx:for-item="performance">
+      <view class="card">
+        <image src="https://source.unsplash.com/50x50/?movie" />
+          <text>{{performance.name}}</text>
       </view>
     </view>
   </view>
+</view>
 
-  <button class='btn-back-to-landing' bindtap="goToLandingPage">Back to landing page</button>
