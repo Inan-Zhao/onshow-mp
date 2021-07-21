@@ -28,8 +28,8 @@ Page({
         console.log(res);
         // redirect to index page when done
         // when you have tab use tabBar
-        wx.navigateTo({
-          url: `/pages/show/show?id=${id}`
+        wx.switchTab({
+          url: `/pages/index/index`
         });
       }
     });

@@ -20,3 +20,6 @@
     <navigator>View more</navigator>
   </block>
 </view>
+
+<button class='btn-edit' bindtap="goToEditPage">edit</button>
+<button class='btn-delete' bindtap="goToIndexPage">delete</button>
