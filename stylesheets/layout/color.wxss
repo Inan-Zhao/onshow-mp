@@ -7,6 +7,7 @@
 .ter { color: var(--ter) !important; }
 .white { color: var(--white) !important; }
 .black { color: var(--black) !important; }
+.dim { color: var(--dim) !important; }
 .grey-light { color: var(--greyLight) !important; }
 .grey { color: var(--grey) !important; }
 .grey-dark { color: var(--greyDark) !important; }
@@ -30,6 +31,7 @@
 .bg-sec { background-color: var(--sec); }
 .bg-ter { background-color: var(--ter); }
 .bg-white { background-color: var(--white); }
+.bg-dim { background-color: var(--dim); }
 .bg-grey-light { background-color: var(--greyLight); }
 .bg-grey { background-color: var(--grey); }
 .bg-grey-dark { background-color: var(--greyDark); }
@@ -57,6 +59,7 @@
 .b-ter { border-color: var(--ter); }
 .b-white { border-color: var(--white); }
 .b-black { border-color: var(--black); }
+.b-dim { border-color: var(--dim); }
 .b-grey-light { border-color: var(--greyLight) }
 .b-grey { border-color: var(--grey); }
 .b-grey-dark { border-color: var(--greyDark); }

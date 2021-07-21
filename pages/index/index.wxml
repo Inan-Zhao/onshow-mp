@@ -1,14 +1,30 @@
-<view class="container">
-  <view wx:if="{{performances.length===0}}">
-    <view class="when-empty">There’s nothing here yet!</view> 
-  </view>
-  <view wx:else>
-    <view class="cards" wx:for="{{performances}}" wx:key="index" wx:for-item="performance">
-      <view class="card">
-        <image src="https://source.unsplash.com/50x50/?movie" />
-          <text>{{performance.name}}</text>
+<view class="bg-dim">
+  <view class="px40">
+    <view class="w100 py20">
+      <view class="row-start pa20 bg-white radius30 shadow">
+          <icon type='search' size="32rpx" class="mr20"></icon>
+          <input type="text" bindinput="searchList" bindconfirm="endsearchList" bindfocus='getfocus' bindblur="blursearch" confirm-type='search' value='{{searchstr}}' placeholder='what for this weekend...' />
+          <icon bindtap='activity_clear' wx:if="{{searchflag}}" type='clear' size="28rpx"></icon>
+      </view>
+    </view>
+
+
+    <view wx:if="{{performances.length===0}}">
+      <view class="when-empty">There’s nothing here yet!</view> 
+    </view>
+    <view wx:else>
+      <view class="row-between wrap w100">
+        <block wx:for="{{performances}}" wx:key="index" wx:for-item="performance">
+          <view class="card">
+            <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill" />
+            <view class="pa">
+              <text>{{performance.name}}</text>
+            </view>
+          </view>
+        </block>
       </view>
     </view>
   </view>
+
 </view>
 

@@ -8,7 +8,7 @@ page {
   --white: #fff;
   --black: #000;
   --white: #fff;
-  --greySlight: #efefef;
+  --dim: #fafafa;
   --greyLight: #d6d6d6;
   --grey: #6d6d6d;
   --greyDark: #333333;

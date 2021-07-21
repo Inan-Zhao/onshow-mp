@@ -1,5 +1,5 @@
-.box-b { box-sizing: border-box; }
-.box-c { box-sizing: content-box; }
+.bbox { box-sizing: border-box; }
+.cbox { box-sizing: content-box; }
 
 /* WIDTH */
 .w100 { width: 100% !important; }
