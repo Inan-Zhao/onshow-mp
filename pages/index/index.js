@@ -12,6 +12,14 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
   },
   // 事件处理函数
+
+  onClick: function(e) {
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo ({
+      url: `/pages/show/show?id=${id}`,
+    })
+  },
+
   bindViewTap() {
     wx.navigateTo({
       url: '../logs/logs'

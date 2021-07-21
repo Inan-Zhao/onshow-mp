@@ -16,7 +16,7 @@
       <view class="row-between wrap w100">
         <block wx:for="{{performances}}" wx:key="index" wx:for-item="performance">
           <view class="card">
-            <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill" />
+            <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill" bindtap="onClick" data-id="{{performance.id}}"/>
             <view class="pa">
               <text>{{performance.name}}</text>
             </view>
