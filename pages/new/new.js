@@ -1,6 +1,36 @@
 // pages/new/new.js
 Page({
 
+  formSubmit: function(event) {
+    let name = event.detail.value.name;
+    let date = event.detail.value.date;
+    let venue = event.detail.value.venue;
+    let price = event.detail.value.price;
+    let description = event.detail.value.description;
+    let image_url = event.detail.value.image_url;
+
+    let performance = {
+      name: name,
+      date: date, 
+      venue: venue, 
+      price: price,
+      description: description,
+      image_url: image_url
+    };
+
+    wx.request({
+      url: `http://localhost:3000/api/v1/performances`,
+      method: 'POST',
+      data: performance,
+      success() {
+        // redirect to index page when done
+        wx.redirectTo({
+          url: '/pages/index/index'
+        });
+      }
+    });
+  },
+
   /**
    * 页面的初始数据
    */

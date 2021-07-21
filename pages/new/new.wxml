@@ -1,2 +1,24 @@
 <!--pages/new/new.wxml-->
-<text>pages/new/new.wxml</text>
+<!-- <text>pages/new/new.wxml</text> -->
+
+<view class='topbar'>
+    Tell us more about you performance here
+</view>
+
+<view class='container'>
+    <form bindsubmit="formSubmit">
+    <text>Name:</text>
+    <input name="name" placeholder="enter name here" class='b'/>
+    <text>Date:</text>
+    <input name="date" placeholder="enter venue here" class='b'/>
+    <text>Venue:</text>
+    <input name="venue" placeholder="enter venue here" class='b'/>
+    <text>Price:</text>
+    <input name="price" placeholder="enter price here" class='b'/>
+    <text>Description:</text>
+    <input name="description" placeholder="enter description here" class='b'/>
+    <text>Poster:</text>
+    <input name="image_url" placeholder="enter image url here" class='b'/>
+  <button form-type="submit">Submit</button>
+</form>
+</view>

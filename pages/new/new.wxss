@@ -1,1 +1,5 @@
 /* pages/new/new.wxss */
+.topbar{
+  background-color: pink
+}
+
