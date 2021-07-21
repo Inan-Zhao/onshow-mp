@@ -1,6 +1,6 @@
 <!--pages/show/show.wxml-->
-<view class="show-head">
-  <view class="show-head-text"></view>
+<view class="show-head" style="">
+  <view class="show-head-text" style=""></view>
     <view class="h3">{{performance.name}}</view>
     <view class="p">{{performance.city}}</view>
     <view class="p">{{performance.price}}</view>
