@@ -1,6 +1,40 @@
 // pages/edit/edit.js
 Page({
 
+  formSubmit: function(event) {
+    let name = event.detail.value.name;
+    let date = event.detail.value.date;
+    let venue = event.detail.value.venue;
+    let price = event.detail.value.price;
+    let description = event.detail.value.description;
+    let image_url = event.detail.value.image_url;
+    console.log(name)
+
+    let performance = {
+      name: name,
+      date: date, 
+      venue: venue, 
+      price: price,
+      description: description,
+      image_url: image_url,
+      user_id: 1
+    };
+
+    wx.request({
+      url: `http://localhost:3000/api/v1/performances`,
+      method: 'POST',
+      data: performance,
+      success(res) {
+        console.log(res);
+        // redirect to index page when done
+        // when you have tab use tabBar
+        wx.navigateTo({
+          url: `/pages/show/show?id=${id}`
+        });
+      }
+    });
+  },
+
   /**
    * 页面的初始数据
    */

@@ -1,2 +1,39 @@
 <!--pages/edit/edit.wxml-->
-<text>pages/edit/edit.wxml</text>
+<view class='topbar'>
+  <view class='pa50'>
+    What do you wish to update?
+  </view>
+</view>
+
+<view class='container'>
+    <form bindsubmit="formSubmit">
+    <view class='ma30'>
+      <text>Name:</text>
+      <input name="name" placeholder="enter new name here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Date:</text>
+      <input name="date" placeholder="enter new date here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Venue:</text>
+      <input name="venue" placeholder="enter new venue here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Price:</text>
+      <input name="price" placeholder="enter new price here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Description:</text>
+      <input name="description" placeholder="enter new description here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Poster:</text>
+      <input name="image_url" placeholder="enter image url here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <button form-type="submit" class='radius10'>Submit</button>
+    </view>
+</form>
+</view>
+
