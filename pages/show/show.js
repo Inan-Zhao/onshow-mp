@@ -31,6 +31,18 @@ Page({
     });
   },
 
+  goToIndexPage() {
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
+  },
+
+  goToEditPage() {
+    wx.navigateTo({
+      url: '/pages/edit/edit'
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

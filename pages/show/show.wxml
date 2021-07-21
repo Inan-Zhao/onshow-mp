@@ -1,7 +1,7 @@
 <!--pages/show/show.wxml-->
 <view class="show-head">
-  <view class="show-head-text"></view>
-    <view class="h3">{{performance.name}}</view>
+  <view class="show-head-text ma30"></view>
+    <view class="h3 ma30">{{performance.name}}</view>
     <view class="p">{{performance.city}}</view>
     <view class="p">{{performance.price}}</view>
   <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill"/>
@@ -19,3 +19,7 @@
   <view class="p">{{performance.description}}</view>
   <navigator>View more</navigator>
 </block>
+
+<button class='btn-delete' bindtap="goToIndexPage">delete</button>
+<button class='btn-edit' bindtap="goToEditPage">edit</button>
+<!-- <navigator>review</navigator> -->
