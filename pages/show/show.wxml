@@ -1,5 +1,21 @@
 <!--pages/show/show.wxml-->
-<text>pages/show/show.wxml
+<view class="show-head">
+  <view class="show-head-text"></view>
+    <view class="h3">{{performance.name}}</view>
+    <view class="p">{{performance.city}}</view>
+    <view class="p">{{performance.price}}</view>
+  <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill"/>
+</view>
 
-{{performance.name}}
-{{performance.description}}</text>
+<view class="show-middle">
+  <view class="p">{{performance.city}} | {{performance.venue}}</view>
+  <view class="p">{{performance.date}}</view>
+</view>
+ 
+<block>
+  <view class="highlight">{{performance.highlight}}</view>
+  <view class="p">{{performance.description}}</view>
+  <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?theatre" mode="aspectFill"/>
+  <view class="p">{{performance.description}}</view>
+  <navigator>View more</navigator>
+</block>

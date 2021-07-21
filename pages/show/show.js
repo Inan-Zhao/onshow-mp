@@ -13,7 +13,6 @@ Page({
    */
   onLoad: function (options) {
     let page = this;
-
     // Get api data
     wx.request({
       url: `http://localhost:3000/api/v1/performances/${options.id}`,
@@ -23,8 +22,11 @@ Page({
         console.log(performance)
         // Update local data
         page.setData({performance});
+        // wx.hideToast();
 
-        wx.hideToast();
+        wx.setNavigationBarTitle({
+          title: page.data.name,
+        });
       }
     });
   },
@@ -33,7 +35,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+ 
   },
 
   /**
