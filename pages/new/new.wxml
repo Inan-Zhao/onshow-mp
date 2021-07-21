@@ -2,23 +2,39 @@
 <!-- <text>pages/new/new.wxml</text> -->
 
 <view class='topbar'>
+  <view class='pa50'>
     Tell us more about you performance here
+  </view>
 </view>
 
 <view class='container'>
     <form bindsubmit="formSubmit">
-    <text>Name:</text>
-    <input name="name" placeholder="enter name here" class='b'/>
-    <text>Date:</text>
-    <input name="date" placeholder="enter venue here" class='b'/>
-    <text>Venue:</text>
-    <input name="venue" placeholder="enter venue here" class='b'/>
-    <text>Price:</text>
-    <input name="price" placeholder="enter price here" class='b'/>
-    <text>Description:</text>
-    <input name="description" placeholder="enter description here" class='b'/>
-    <text>Poster:</text>
-    <input name="image_url" placeholder="enter image url here" class='b'/>
-  <button form-type="submit">Submit</button>
+    <view class='ma30'>
+      <text>Name:</text>
+      <input name="name" placeholder="enter name here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Date:</text>
+      <input name="date" placeholder="enter venue here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Venue:</text>
+      <input name="venue" placeholder="enter venue here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Price:</text>
+      <input name="price" placeholder="enter price here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Description:</text>
+      <input name="description" placeholder="enter description here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Poster:</text>
+      <input name="image_url" placeholder="enter image url here" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <button form-type="submit" class='radius10'>Submit</button>
+    </view>
 </form>
 </view>
