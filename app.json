@@ -4,7 +4,7 @@
     "pages/show/show",
     "pages/edit/edit",
     "pages/new/new",
-    "pages/destroy/destroy",
+    "pages/purchase/purchase",
     "pages/profile/profile",
     "pages/logs/logs"
   ],
