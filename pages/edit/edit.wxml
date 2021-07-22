@@ -1,47 +1,59 @@
 <!--pages/edit/edit.wxml-->
-<view class='topbar'>
-  <view class='pa50'>
-    Update your performace here 😁
+<form bindsubmit="formSubmit">
+  <view class="one-info">
+      <view class="biaoti">
+        <text>Name</text>
+      </view>
+        <input class="shuru" value="{{name}}" name="name"/>
   </view>
-</view>
 
-<view class='container'>
-  <form bindsubmit="formSubmit">
-    <view class='form-group'>
-      <view class="form-label">Name</view>
-      <input class="form-value" value="{{name}}" name="name" placeholder="" class='b radius10'/>
+  <view class="display: flex align-item: text-around">
+    <view class="one-info">
+        <view class="biaoti">
+          <text>City</text>
+        </view>
+          <input class="shuru" value="{{city}}" name="city"/>
     </view>
-    <view class='form-group'>
-      <view class="form-label">Date</view>
-      <input value="{{date}}" name="date" placeholder="" class='b radius10'/>
-    </view>
-    <view class='form-group'>
-      <view class="form-label">City</view>
-      <input value="{{city}}" name="city" placeholder="" class='b radius10'/>
-    </view>
-    <view class='form-group'>
-      <view class="form-label">Venue</view>
-      <input value="{{venue}}" name="venue" placeholder="" class='b radius10'/>
-    </view>
-    <view class='form-group'>
-      <view class="form-label">Price</view>
-      <input value="{{price}}" name="price" placeholder="" class='b radius10'/>
-    </view>
-    <view class='form-group'>
-      <view class="form-label">Highlight</view>
-      <input value="{{highlight}}" name="highlight" placeholder="" class='b radius10'/>
-    </view>
-    <view class='form-group'>
-      <view class="form-label">Description</view>
-      <input value="{{description}}" name="description" placeholder="" class='b radius10'/>
-    </view>
-    <view class='form-group'>
-      <view class="form-label">Poster</view>
-      <input value="{{image_url}}" name="image_url" placeholder="" class='b radius10'/>
-    </view>
-    <view class='ma30'>
-      <button form-type="submit" class='radius10'>Submit</button>
-    </view>
-  </form>
-</view>
 
+    <view class="one-info">
+        <view class="biaoti">
+          <text>Date</text>
+        </view>
+          <input class="shuru" value="{{date}}" name="date"/>
+    </view>
+  </view>
+
+  <view class="one-info">
+      <view class="biaoti">
+        <text>Venue</text>
+      </view>
+        <input class="shuru" value="{{venue}}" name="venue"/>
+  </view>
+
+  <view class="one-info">
+      <view class="biaoti">
+        <text>Highlight</text>
+      </view>
+        <input class="shuru" value="{{highlight}}" name="highlight"/>
+  </view>
+
+  <view class="one-info">
+      <view class="biaoti">
+        <text>Description</text>
+      </view>
+        <input class="shuru" value="{{description}}" name="description"/>
+  </view>
+
+  <view class="group">
+    <view class="img-holder">
+      <button class="btn-upload-img w20 ma0" bindtap="upload">new poster</button>
+    </view>
+  </view>
+  <button class="btn-submit" form-type="submit">Submit</button>
+</form>
+
+<!-- 图片Preview的部分 还不work 但不能删
+<block wx:for="{{tempFilePaths}}" wx:key="{{index}}">
+    <image src="{{item }}" bindtap="listenerButtonPreviewImage" data-index="{{index}}" style="width: 100%;"/>
+    还有，搜一下display image-url
+</block> -->
