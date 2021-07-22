@@ -87,6 +87,7 @@
 }
 
 .btn-purchase {
+  color: white;
   background-color: #FB3292;
   width: auto;
 }

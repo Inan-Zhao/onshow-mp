@@ -24,7 +24,7 @@
 
     <view class="tc pt30 pb50 f26" style="color: #5e5d5d; font-style: italic; font-family: 'Monterra', monospace">{{highlight}}</view>
     
-    <view class="tc">
+    <view class="tc pl30 pr30">
       <text>{{description}}</text>
       <view class="mt30 mb30"><image class="w50 radius40" style="height: 360rpx;" src="https://cdn.pixabay.com/photo/2021/05/14/22/11/faces-6254573_960_720.jpg" mode="aspectFill"/></view>
       <view><text>{{description}}</text></view>
