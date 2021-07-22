@@ -1,21 +1,33 @@
 <!--pages/show/show.wxml-->
+<<<<<<< HEAD
 <view class="show-head" style="">
   <view class="show-head-text" style=""></view>
     <view class="h3">{{performance.name}}</view>
     <view class="p">{{performance.city}}</view>
     <view class="p">{{performance.price}}</view>
+=======
+<view class="pa40 text-center">
+  <view class="show-head-text"></view>
+    <view class="bold">{{performance.name}}</view>
+    <!-- <view class="p">City: {{performance.city}}</view> -->
+    <view class="p">Price: {{performance.price}}</view>
+>>>>>>> a6967b63e6cbcaa54dba0e0e993f73299e502eba
   <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill"/>
 </view>
 
-<view class="show-middle">
-  <view class="p">{{performance.city}} | {{performance.venue}}</view>
-  <view class="p">{{performance.date}}</view>
+<view class="pa40 text-center">
+  <view class="pl20 pr20">Venue: {{performance.venue}}</view>
+  <view class="pl20 pr20">Date: {{performance.date}}</view>
 </view>
  
-<block>
-  <view class="highlight">{{performance.highlight}}</view>
-  <view class="p">{{performance.description}}</view>
-  <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?theatre" mode="aspectFill"/>
-  <view class="p">{{performance.description}}</view>
-  <navigator>View more</navigator>
-</block>
+<view class="pa40 text-center">
+  <block>
+    <!-- <view class="highlight">{{performance.highlight}}</view> -->
+    <image class="w50 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?theatre" mode="aspectFill"/>
+    <view class="p">Descrption: {{performance.description}}</view>
+    <navigator>View more</navigator>
+  </block>
+</view>
+
+<button class='btn-edit' bindtap="goToEditPage">edit</button>
+<button class='btn-delete' bindtap="goToIndexPage">delete</button>

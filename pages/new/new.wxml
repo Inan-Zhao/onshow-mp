@@ -3,7 +3,7 @@
 
 <view class='topbar'>
   <view class='pa50'>
-    Tell us more about you performance here
+    Tell us more about you performance!
   </view>
 </view>
 
@@ -15,7 +15,7 @@
     </view>
     <view class='ma30'>
       <text>Date:</text>
-      <input name="date" placeholder="enter venue here" class='b radius10'/>
+      <input name="date" placeholder="enter date here" class='b radius10'/>
     </view>
     <view class='ma30'>
       <text>Venue:</text>

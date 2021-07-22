@@ -1,13 +1,12 @@
 <view class="bg-dim">
   <view class="px40">
     <view class="w100 py20">
-      <view class="row-start pa20 bg-white radius30 shadow">
+      <view class="row-start pa20 mt20 mb20 bg-white radius30 shadow">
           <icon type='search' size="32rpx" class="mr20"></icon>
-          <input type="text" bindinput="searchList" bindconfirm="endsearchList" bindfocus='getfocus' bindblur="blursearch" confirm-type='search' value='{{searchstr}}' placeholder='what for this weekend...' />
-          <icon bindtap='activity_clear' wx:if="{{searchflag}}" type='clear' size="28rpx"></icon>
+          <input type="text" bindinput="searchList" bindconfirm="endsearchList" bindfocus='getfocus' bindblur="blursearch" confirm-type='search' value='{{searchstr}}' placeholder='Find a performance...' />
+          <icon bindtap='activity_clear' wx:if="{{searchflag}}" type='clear' size="35rpx"></icon>
       </view>
     </view>
-
 
     <view wx:if="{{performances.length===0}}">
       <view class="when-empty">There’s nothing here yet!</view> 

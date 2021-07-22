@@ -8,6 +8,7 @@ Page({
     let price = event.detail.value.price;
     let description = event.detail.value.description;
     let image_url = event.detail.value.image_url;
+    console.log(name)
 
     let performance = {
       name: name,
@@ -15,16 +16,20 @@ Page({
       venue: venue, 
       price: price,
       description: description,
-      image_url: image_url
+      image_url: image_url,
+      user_id: 1
     };
 
     wx.request({
-      url: `http://localhost:3000/api/v1/performances`,
+      // url: `http://localhost:3000/api/v1/performances`,
+      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances`,
       method: 'POST',
       data: performance,
-      success() {
+      success(res) {
+        console.log(res);
         // redirect to index page when done
-        wx.redirectTo({
+        // when you have tab use tabBar
+        wx.switchTab({
           url: '/pages/index/index'
         });
       }
@@ -115,7 +120,8 @@ Page({
 
     // Post data to API
     wx.request({
-      url: `http://localhost:3000/api/v1/performances`,
+      // url: `http://localhost:3000/api/v1/performances`,
+      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances`,
       method: 'POST',
       data: performance,
       success() {

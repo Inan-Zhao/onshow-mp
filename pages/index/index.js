@@ -30,7 +30,8 @@ Page({
   
       // Get api data
       wx.request({
-        url: "http://localhost:3000/api/v1/performances",
+        // url: "http://localhost:3000/api/v1/performances",
+        url: "https://rbnb-theatre.herokuapp.com/api/v1/performances",
         method: 'GET',
         success(res) {
           const performances = res.data.performances;

@@ -15,7 +15,8 @@ Page({
     let page = this;
     // Get api data
     wx.request({
-      url: `http://localhost:3000/api/v1/performances/${options.id}`,
+      // url: `http://localhost:3000/api/v1/performances/${options.id}`,
+      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances/${options.id}`,
       method: 'GET',
       success(res) {
         const performance = res.data;
@@ -31,6 +32,18 @@ Page({
     });
   },
 
+  goToIndexPage() {
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
+  },
+
+  goToEditPage() {
+    wx.navigateTo({
+      url: '/pages/edit/edit'
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
