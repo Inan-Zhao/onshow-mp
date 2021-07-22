@@ -1,5 +1,18 @@
 /* pages/show/show.wxss */
-/* .show-head {
-  height: 150px;
-  
-} */
+.bg-img {
+  width: 800rpx; 
+  height: 400rpx; 
+  opacity:0.1;
+}
+
+.poster-img {
+  width: 300rpx; 
+  height: 300rpx;
+  top:100px;
+  left: 20px;
+  z-index:999;
+  position:absolute;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
