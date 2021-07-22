@@ -1,18 +1,72 @@
 /* pages/show/show.wxss */
-.bg-img {
+
+@font-face {
+  font-family: 'iconfont';  /* Project id 2692746 */
+  src: url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.woff2?t=1626932668312') format('woff2'),
+       url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.woff?t=1626932668312') format('woff'),
+       url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.ttf?t=1626932668312') format('truetype');
+}
+
+.iconfont{
+  font-family: 'iconfont';
+  color: rgb(187, 101, 101);
+  font-size: 25px;
+}
+
+.icon-map::before{
+  content: '\e629';
+}
+
+
+.div-relative {
+  position: relative;
+  width: 414px;
+  height: 896px;
+}
+
+.div-with-bg {
+  position: absolute;
+  z-index: 60;
   width: 800rpx; 
   height: 400rpx; 
-  opacity:0.1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.div-with-bg::before {    
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/28/17/39/poster-2690541_960_720.png');
+  background-size: contain;
+  resize: both;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
 }
 
 .poster-img {
+  position: absolute;
+  z-index: 80;
   width: 300rpx; 
   height: 300rpx;
-  top:100px;
-  left: 20px;
-  z-index:999;
-  position:absolute;
+  top: 50px;
+  left: 35px;
   border-radius: 10px;
   overflow: hidden;
 }
 
+.bg-white {
+  position: absolute;
+  z-index: 70;
+  background-color: white;
+  border-radius: 30px;
+  position:absolute;
+  top: 150px;
+  width: 414px;
+  height: 600px;
+}
+
+.black {
+  line-height:0.8;
+}
