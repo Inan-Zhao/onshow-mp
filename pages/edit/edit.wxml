@@ -6,42 +6,42 @@
 </view>
 
 <view class='container'>
-    <form bindsubmit="formSubmit">
-      <view class='ma30'>
-        <text>Name</text>
-        <input value="{{name}}" name="name" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>Date</text>
-        <input value="{{date}}" name="date" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>City</text>
-        <input value="{{city}}" name="city" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>Venue</text>
-        <input value="{{venue}}" name="venue" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>Price</text>
-        <input value="{{price}}" name="price" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>Highlight</text>
-        <input value="{{highlight}}" name="highlight" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>Description</text>
-        <input value="{{description}}" name="description" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <text>Poster</text>
-        <input value="{{image_url}}" name="image_url" placeholder="" class='b radius10'/>
-      </view>
-      <view class='ma30'>
-        <button form-type="submit" class='radius10'>Submit</button>
-      </view>
-</form>
+  <form bindsubmit="formSubmit">
+    <view class='form-group'>
+      <view class="form-label">Name</view>
+      <input class="form-value" value="{{name}}" name="name" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">Date</view>
+      <input value="{{date}}" name="date" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">City</view>
+      <input value="{{city}}" name="city" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">Venue</view>
+      <input value="{{venue}}" name="venue" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">Price</view>
+      <input value="{{price}}" name="price" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">Highlight</view>
+      <input value="{{highlight}}" name="highlight" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">Description</view>
+      <input value="{{description}}" name="description" placeholder="" class='b radius10'/>
+    </view>
+    <view class='form-group'>
+      <view class="form-label">Poster</view>
+      <input value="{{image_url}}" name="image_url" placeholder="" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <button form-type="submit" class='radius10'>Submit</button>
+    </view>
+  </form>
 </view>
 

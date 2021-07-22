@@ -1,4 +1,11 @@
 /* pages/edit/edit.wxss */
 .topbar{
-  background-color:#FF48A0
+  background-color:#FF48A0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  padding: 40px;
 }
