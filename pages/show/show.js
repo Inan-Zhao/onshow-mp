@@ -14,7 +14,7 @@ Page({
   onLoad: function (options) {
     const page = this;
     wx.request({
-      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances/${options.id}`,
+      url: `http://localhost:3000/api/v1/performances/${options.id}`,
       method: 'GET',
       success(res) {
         const performance = res.data;

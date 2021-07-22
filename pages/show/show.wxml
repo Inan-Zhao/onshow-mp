@@ -9,7 +9,7 @@
 
 <view class="show-head-text"></view>
     <view class="bold">{{performance.name}}</view>
-    <!-- <view class="p">City: {{performance.city}}</view> -->
+    <view class="p">City: {{performance.city}}</view>
     <view class="p">Price: {{performance.price}}</view>
 
 <view class="pa40 text-center">
@@ -19,7 +19,7 @@
  
 <view class="pa40 text-center">
   <block>
-    <!-- <view class="highlight">{{performance.highlight}}</view> -->
+    <view class="highlight">{{performance.highlight}}</view>
     <image class="w50 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?theatre" mode="aspectFill"/>
     <view class="p">Descrption: {{performance.description}}</view>
     <navigator>View more</navigator>
