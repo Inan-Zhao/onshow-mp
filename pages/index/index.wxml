@@ -16,8 +16,11 @@
         <block wx:for="{{performances}}" wx:key="index" wx:for-item="performance">
           <view class="card">
             <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill" bindtap="onClick" data-id="{{performance.id}}"/>
-            <view class="pa">
-              <text>{{performance.name}}</text>
+            <view class="text-left mt ml10 h8 white">
+              <text class="city-text">London</text>
+            </view>
+            <view class="ml10 tl pa">
+              <text class="name-text">{{performance.name}}</text>
             </view>
           </view>
         </block>

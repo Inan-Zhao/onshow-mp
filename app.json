@@ -8,30 +8,31 @@
     "pages/profile/profile",
     "pages/logs/logs"
   ],
+  
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "On Show",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FE4BA1",
+    "navigationBarTitleText": "onShow",
+    "navigationBarTextStyle":"white"
   },
 
   "tabBar": {
     "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "selectedColor": "#e77baf",
     "borderStyle":"white",
     "list": [{
       "pagePath": "pages/index/index",
-      "selectedIconPath": "icons/homepage_black.png",
-      "iconPath": "icons/homepage_pink.png",
+      "selectedIconPath": "icons/homepage_pink.png",
+      "iconPath": "icons/homepage_black.png",
       "text": "explore"
     }, {
       "pagePath": "pages/new/new",
-      "selectedIconPath": "icons/plus_black.png",
+      "selectedIconPath": "icons/plus_pink.png",
       "iconPath": "icons/plus_black.png",
       "text": "add"
     },{
       "pagePath": "pages/profile/profile",
-      "selectedIconPath": "icons/profile_black.png",
+      "selectedIconPath": "icons/profile_pink.png",
       "iconPath": "icons/profile_black.png",
       "text": "profile"
     }]

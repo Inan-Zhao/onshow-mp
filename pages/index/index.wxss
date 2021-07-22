@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+.city-text {
+  color: #ffffff;
+  /* text-indent: 0.5cm; */
+}
+
+.text-left {
+  width: fit-content;
+  background-color: #e77baf;
+  padding: 2px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.name-text {
+  font-family: 'Monterra', monospace;
+}
 
 /* Style the counter cards */
 .card {
