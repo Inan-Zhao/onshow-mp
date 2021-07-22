@@ -1,30 +1,44 @@
 <!--pages/show/show.wxml-->
-<view class="bg-img">
-  <image style="width: 100%; height: 100%" src="https://cdn.pixabay.com/photo/2017/08/28/17/39/poster-2690541_960_720.png" />
+<view class="div-relative">
+  <view class="div-with-bg">
+    <view class="mt120 ml300 f32 bold tc" >
+      <text style="font-style: italic w50">{{name}}</text>
+    </view>
+    <view class="mt20 ml200 f32 tc">
+      <icon class="iconfont icon-map" style="mt100 ml400"></icon>
+      <text>{{city}}</text>
+    </view>
+  </view>
+
+  <view class="poster-img">
+    <image style="width: 100%; height: 100%" src="https://cdn.pixabay.com/photo/2017/08/28/17/39/poster-2690541_960_720.png" mode="aspectFill"/>
+  </view>
+
+  <view class="bg-white">
+    <view class="mt135 ml80 mr80">
+      <text class="black">{{city}} | {{venue}}</text>
+    </view>
+    <view class="mt20 ml60 radius20" style="width: fit-content">
+      <text style="padding: 10px 10px 10px 10px">Date: {{date}}</text>
+    </view>
+
+    <view class="tc pt30 pb50 f26" style="color: #5e5d5d; font-style: italic; font-family: 'Monterra', monospace">{{highlight}}</view>
+    
+    <view class="tc">
+      <text>{{description}}</text>
+      <view class="mt30 mb30"><image class="w50 radius40" style="height: 360rpx;" src="https://cdn.pixabay.com/photo/2021/05/14/22/11/faces-6254573_960_720.jpg" mode="aspectFill"/></view>
+      <view><text>{{description}}</text></view>
+    </view>
+
+    <view class="tc mt30 mb30" style="color: #FF7ABA">view more</view>
+    
+    <view class="bottom-bar">
+      <view class="f12">
+        <button class='btn-edit' bindtap="goToEditPage" data-id="{{id}}">edit</button>
+        <button class='btn-delete' bindtap="deletePerformance" data-id="{{id}}">delete</button>
+        <button class='btn-purchase' bindtap="goToPurchasePage">Buy Ticket</button>
+      </view>
+    </view>
+
 </view>
 
-<view class="poster-img">
-  <image style="width: 100%; height: 100%" src="https://cdn.pixabay.com/photo/2017/08/28/17/39/poster-2690541_960_720.png" />
-</view>
-
-<view class="show-head-text"></view>
-    <view class="bold">{{name}}</view>
-    <view class="p">City: {{city}}</view>
-    <view class="p">Price: {{price}}</view>
-
-<view class="pa40 text-center">
-  <view class="pl20 pr20">Venue: {{venue}}</view>
-  <view class="pl20 pr20">Date: {{date}}</view>
-</view>
- 
-<view class="pa40 text-center">
-  <block>
-    <view class="highlight">{{highlight}}</view>
-    <image class="w50 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?theatre" mode="aspectFill"/>
-    <view class="p">Descrption: {{description}}</view>
-    <navigator>View more</navigator>
-  </block>
-</view>
-
-<button class='btn-edit' bindtap="goToEditPage" data-id="{{id}}">edit</button>
-<button class='btn-delete' bindtap="deletePerformance" data-id="{{id}}">delete</button>
