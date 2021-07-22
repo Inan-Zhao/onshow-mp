@@ -63,20 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  deleteStory(e) {
-    const data = e.currentTarget.dataset;
-
-    // make a DELETE request
-    wx.request({
-      url: `http://localhost:3000/api/v1/performances/${data.id}`,
-      method: 'DELETE',
-      success() {
-        // redirect to index page when done
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
-      }
-    });
-  }
 })

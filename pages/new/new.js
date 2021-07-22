@@ -1,32 +1,28 @@
 // pages/new/new.js
 Page({
 
-  formSubmit: function(event) {
-    let name = event.detail.value.name;
-    let date = event.detail.value.date;
-    let venue = event.detail.value.venue;
-    let price = event.detail.value.price;
-    let description = event.detail.value.description;
-    let image_url = event.detail.value.image_url;
-    console.log(name)
+  formSubmit: function(e) {
+    // console.log(e)
 
     let performance = {
-      name: name,
-      date: date, 
-      venue: venue, 
-      price: price,
-      description: description,
-      image_url: image_url,
+      name: e.detail.value.name,
+      date: e.detail.value.date, 
+      city: e.detail.value.city,
+      venue: e.detail.value.venue, 
+      price: e.detail.value.price,
+      highlight: e.detail.value.highlight,
+      description: e.detail.value.description,
+      image_url: e.detail.value.image_url,
       user_id: 1
     };
 
     wx.request({
-      // url: `http://localhost:3000/api/v1/performances`,
-      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances`,
+      url: `http://localhost:3000/api/v1/performances`,
+      // url: `https://rbnb-theatre.herokuapp.com/api/v1/performances`,
       method: 'POST',
       data: performance,
       success(res) {
-        console.log(res);
+        // console.log(res);
         // redirect to index page when done
         // when you have tab use tabBar
         wx.switchTab({
@@ -98,38 +94,4 @@ Page({
   onShareAppMessage: function () {
 
   },
-
-  bindSubmit: function (e) {
-
-    let name = e.detail.value.name;
-    let venue = e.detail.value.venue;
-    let date = e.detail.value.date;
-    let price = e.detail.value.price;
-    let description = e.detail.value.description;
-    let image_url = e.detail.value.image_url;
-    let id = this.data.id;
-
-    let performance = {
-      name: name,
-      venue: venue,
-      date: date,
-      price: price,
-      description: description,
-      image_url: image_url
-    }
-
-    // Post data to API
-    wx.request({
-      // url: `http://localhost:3000/api/v1/performances`,
-      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances`,
-      method: 'POST',
-      data: performance,
-      success() {
-        // redirect to index page when done
-        wx.redirectTo({
-          url: '/pages/index/index'
-        });
-      }
-    });
-  }
 })

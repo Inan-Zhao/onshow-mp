@@ -12,7 +12,7 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
   },
 
-  onLoad: function (options) {
+  onShow: function (options) {
     const page = this;
       // Get api data
       wx.request({
@@ -20,9 +20,9 @@ Page({
         method: 'GET',
         success(res) {
           const performances = res.data.performances;
-          console.log('data', res);
-          page.setData({performances: res.data.performances});
-          // wx.hideToast();
+          // console.log('data', res);
+          page.setData({performances: performances});
+          wx.hideToast();
         }
       });
   },

@@ -55,10 +55,7 @@ Page({
       method: 'PUT',
       data: performance,
       success() {
-        // redirect to show page when done
-        wx.redirectTo({
-          url: `/pages/show/show?id=${id}`
-        });
+        wx.navigateBack();
       }
     });
   },

@@ -11,27 +11,22 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onShow: function () {
     const page = this;
     wx.request({
-      url: `http://localhost:3000/api/v1/performances/${options.id}`,
+      url: `http://localhost:3000/api/v1/performances/${page.options.id}`,
       method: 'GET',
       success(res) {
-        // console.log(res)
+        console.log(res)
         const performance = res.data;
         // console.log(performance)
         page.setData(performance);
         wx.setNavigationBarTitle({
           title: performance.name,
         });
+        wx.hideToast();
       }
     });
-  },
-
-  goToIndexPage() {
-    wx.switchTab({
-      url: '/pages/index/index'
-    })
   },
 
   goToEditPage(e) {
@@ -41,6 +36,23 @@ Page({
     })
   },
   
+  // binded to delete button
+  deletePerformance(e) {
+    const data = e.currentTarget.dataset;
+    console.log(e)
+    // make a DELETE request
+    wx.request({
+      url: `http://localhost:3000/api/v1/performances/${data.id}`,
+      method: 'DELETE',
+      success() {
+        // redirect to index page when done
+        wx.switchTab({
+          url: '/pages/index/index'
+        });
+      }
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -48,13 +60,6 @@ Page({
     // wx.setNavigationBarTitle({
     //   title: this.data.name,
     // });
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
   },
 
   /**
