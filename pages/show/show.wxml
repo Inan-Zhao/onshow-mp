@@ -1,17 +1,9 @@
 <!--pages/show/show.wxml-->
-<<<<<<< HEAD
-<view class="show-head" style="">
-  <view class="show-head-text" style=""></view>
-    <view class="h3">{{performance.name}}</view>
-    <view class="p">{{performance.city}}</view>
-    <view class="p">{{performance.price}}</view>
-=======
 <view class="pa40 text-center">
   <view class="show-head-text"></view>
     <view class="bold">{{performance.name}}</view>
     <!-- <view class="p">City: {{performance.city}}</view> -->
     <view class="p">Price: {{performance.price}}</view>
->>>>>>> a6967b63e6cbcaa54dba0e0e993f73299e502eba
   <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill"/>
 </view>
 
