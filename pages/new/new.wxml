@@ -3,38 +3,46 @@
 
 <view class='topbar'>
   <view class='pa50'>
-    Tell us more about you performance!
+    Tell us more about your performance 🎭
   </view>
 </view>
 
 <view class='container'>
-    <form bindsubmit="formSubmit">
+  <form bindsubmit="formSubmit">
     <view class='ma30'>
-      <text>Name:</text>
-      <input name="name" placeholder="enter name here" class='b radius10'/>
+      <text>Name</text>
+      <input value="{{name}}" name="name" placeholder="Name of performance" class='b radius10'/>
     </view>
     <view class='ma30'>
-      <text>Date:</text>
-      <input name="date" placeholder="enter date here" class='b radius10'/>
+      <text>Date</text>
+      <input value="{{date}}" name="date" placeholder="Date of performance" class='b radius10'/>
     </view>
     <view class='ma30'>
-      <text>Venue:</text>
-      <input name="venue" placeholder="enter venue here" class='b radius10'/>
+      <text>City</text>
+      <input value="{{city}}" name="city" placeholder="City" class='b radius10'/>
     </view>
     <view class='ma30'>
-      <text>Price:</text>
-      <input name="price" placeholder="enter price here" class='b radius10'/>
+      <text>Venue</text>
+      <input value="{{venue}}" name="venue" placeholder="Venue name" class='b radius10'/>
     </view>
     <view class='ma30'>
-      <text>Description:</text>
-      <input name="description" placeholder="enter description here" class='b radius10'/>
+      <text>Price</text>
+      <input value="{{price}}" name="price" placeholder="CN¥" class='b radius10'/>
     </view>
     <view class='ma30'>
-      <text>Poster:</text>
-      <input name="image_url" placeholder="enter image url here" class='b radius10'/>
+      <text>Highlight</text>
+      <input value="{{highlight}}" name="highlight" placeholder="Highlight of your performance" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Description</text>
+      <input value="{{description}}" name="description" placeholder="Brief description of your performance" class='b radius10'/>
+    </view>
+    <view class='ma30'>
+      <text>Poster</text>
+      <input value="{{image_url}}" name="image_url" placeholder="Image url" class='b radius10'/>
     </view>
     <view class='ma30'>
       <button form-type="submit" class='radius10'>Submit</button>
     </view>
-</form>
+  </form>
 </view>
