@@ -1,1 +1,92 @@
 /* pages/purchase/purchase.wxss */
+@font-face {
+  font-family: 'iconfont';  /* Project id 2692746 */
+  src: url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.woff2?t=1626932668312') format('woff2'),
+       url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.woff?t=1626932668312') format('woff'),
+       url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.ttf?t=1626932668312') format('truetype');
+}
+
+.iconfont{
+  font-family: 'iconfont';
+  color: rgb(187, 101, 101);
+  font-size: 25px;
+}
+
+.icon-map::before{
+  content: '\e629';
+}
+
+
+.div-relative {
+  position: relative;
+  width: 414px;
+  height: 800px;
+}
+
+.div-with-bg {
+  position: absolute;
+  z-index: 60;
+  width: 800rpx; 
+  height: 400rpx; 
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.div-with-bg::before {    
+  content: "";
+  background-color: rgb(197, 100, 100);
+  background-size: contain;
+  resize: both;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.poster-img {
+  position: absolute;
+  z-index: 80;
+  width: 300rpx; 
+  height: 300rpx;
+  top: 50px;
+  left: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-white {
+  position: absolute;
+  z-index: 70;
+  background-color: white;
+  border-radius: 30px;
+  position:absolute;
+  top: 150px;
+  width: 414px;
+  height: 600px;
+}
+
+.black {
+  line-height:1.8;
+}
+
+.bottom {
+  display: flex;
+  align-content: space-between;
+}
+
+.btn-edit {
+  background-color: white;
+  width: 70px !important;
+}
+
+.btn-delete {
+  background-color: white;
+  width: 100px !important;
+}
+
+.btn-purchase {
+  color: white;
+  background-color: #FB3292;
+  width: auto;
+}

@@ -1,1 +1,35 @@
 /* pages/profile/profile.wxss */
+
+.all{
+  background-color: #f4f4f4;
+  height: 896px;
+}
+
+.profile-pic {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.top {
+  display: flex;
+  align-content: space-between;
+}
+
+.box {
+  margin: 30px;
+  background-color: white;
+  /* weight: 200px; */
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.biaoti {
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 20px;
+  size: normal;
+  font-family:'Courier New', Courier, monospace;
+}

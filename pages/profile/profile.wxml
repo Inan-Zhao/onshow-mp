@@ -1,2 +1,22 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class='all'>
+  
+  <view class="top">
+    <image class="profile-pic mt100 ml80" src="https://cdn.pixabay.com/photo/2014/04/12/14/59/portrait-322470_960_720.jpg" />
+    <view class="biaoti mt165 ml120"><text>Inan Zhao</text></view>
+  </view>
+
+  <view class="box">
+    <view class="biaoti">
+        <text>My Tickets</text>
+      </view>
+  </view>
+
+  <view class="box">
+    <view class="biaoti">
+        <text>My Performances</text>
+      </view>
+  </view>
+
+</view>
+
