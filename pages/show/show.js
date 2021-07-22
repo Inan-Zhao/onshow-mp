@@ -14,12 +14,13 @@ Page({
   onLoad: function (options) {
     const page = this;
     wx.request({
-      url: `https://rbnb-theatre.herokuapp.com/api/v1/performances/${options.id}`,
+      url: `http://localhost:3000/api/v1/performances/${options.id}`,
       method: 'GET',
       success(res) {
+        // console.log(res)
         const performance = res.data;
-        console.log(performance)
-        page.setData({performance});
+        // console.log(performance)
+        page.setData(performance);
         wx.setNavigationBarTitle({
           title: performance.name,
         });
@@ -33,9 +34,10 @@ Page({
     })
   },
 
-  goToEditPage() {
+  goToEditPage(e) {
+    const id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '/pages/edit/edit'
+      url: `/pages/edit/edit?id=${id}`
     })
   },
   
