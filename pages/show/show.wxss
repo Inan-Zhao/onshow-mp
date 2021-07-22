@@ -71,9 +71,14 @@
   line-height:1.8;
 }
 
+.bottom {
+  display: flex;
+  align-content: space-between;
+}
+
 .btn-edit {
   background-color: white;
-  width: 100px !important;
+  width: 70px !important;
 }
 
 .btn-delete {
@@ -84,9 +89,4 @@
 .btn-purchase {
   background-color: #FB3292;
   width: auto;
-}
-
-.bottom-bar {
-  display: flex;
-  align-content: space-between;
 }
