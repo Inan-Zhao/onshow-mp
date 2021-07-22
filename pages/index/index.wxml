@@ -17,7 +17,7 @@
           <view class="card">
             <image class="w100 radius40 shadow" style="height: 360rpx;" src="https://source.unsplash.com/500x100/?movie" mode="aspectFill" bindtap="onClick" data-id="{{performance.id}}"/>
             <view class="text-left mt ml10 h8 white">
-              <text class="city-text">London</text>
+              <text class="city-text">{{performance.city}}</text>
             </view>
             <view class="ml10 tl pa">
               <text class="name-text">{{performance.name}}</text>
