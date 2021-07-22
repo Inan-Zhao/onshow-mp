@@ -52,6 +52,7 @@
 .ml60 { margin-left: 60rpx !important; }
 .ml80 { margin-left: 80rpx !important; }
 .ml100 { margin-left: 100rpx !important; }
+.ml120 { margin-left: 120rpx !important; }
 .ml200 { margin-left: 200rpx !important; }
 .ml300 { margin-left: 300rpx !important; }
 .ml400 { margin-left: 400rpx !important; }

@@ -1,2 +1,18 @@
 <!--pages/purchase/purchase.wxml-->
-<text>pages/purchase/purchase.wxml</text>
+<view class="div-relative">
+  <view class="div-with-bg">
+    <view class="mt120 f32 bold tc" >
+      <text style="font-style: italic w50">Confirm Your Ticket</text>
+    </view>
+  </view>
+
+  <view class="bg-white">
+    <view class="mt135 ml80 mr80">
+      <text></text>
+    </view>
+    <view class="mt20 ml60 radius20" style="width: fit-content">
+      <text></text>
+    </view>
+  </view>
+
+</view>
