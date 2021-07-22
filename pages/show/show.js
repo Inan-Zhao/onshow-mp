@@ -12,21 +12,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let page = this;
-    // Get api data
+    const page = this;
     wx.request({
-      // url: `http://localhost:3000/api/v1/performances/${options.id}`,
       url: `https://rbnb-theatre.herokuapp.com/api/v1/performances/${options.id}`,
       method: 'GET',
       success(res) {
         const performance = res.data;
         console.log(performance)
-        // Update local data
         page.setData({performance});
-        // wx.hideToast();
-
         wx.setNavigationBarTitle({
-          title: page.data.name,
+          title: performance.name,
         });
       }
     });
@@ -48,7 +43,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
- 
+    // wx.setNavigationBarTitle({
+    //   title: this.data.name,
+    // });
   },
 
   /**
