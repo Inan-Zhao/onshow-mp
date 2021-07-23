@@ -39,7 +39,7 @@
     <view class="bottom">
         <button class='btn-edit' bindtap="goToEditPage" data-id="{{id}}">edit</button>
         <button class='btn-delete' bindtap="deletePerformance" data-id="{{id}}">delete</button>
-        <button class='btn-purchase' bindtap="goToPurchasePage">Buy Ticket</button>
+        <button class='btn-purchase' bindtap="goToPurchasePage" data-id="{{id}}">Buy Ticket</button>
     </view>
   </view>
 </view>

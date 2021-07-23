@@ -37,7 +37,7 @@ Page({
   },
 
   goToPurchasePage(e) {
-    console.log(e)
+    console.log(11,e)
     const id = e.currentTarget.dataset.id
     wx.navigateTo({
       url: `/pages/purchase/purchase?id=${id}`

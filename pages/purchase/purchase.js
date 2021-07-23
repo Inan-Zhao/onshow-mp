@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
   },
 
   /**
@@ -42,10 +41,9 @@ Page({
       }
     });
   },
-
+  
   goToIndexPage(e) {
-    console.log(e)
-    const id = e.currentTarget.dataset.id
+    // console.log(e)
     wx.switchTab({
       url: `/pages/index/index`
     })
@@ -84,5 +82,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
 })

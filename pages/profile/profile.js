@@ -6,12 +6,29 @@ Page({
    */
   data: {
 
-  },
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+  
+  },
+
+  onShow: function () {
+    const page = this;
+    console.log(this)
+    // Get api data
+    wx.request({
+      url: `http://localhost:3000/api/v1/users/1`,
+      method: 'GET',
+      success(res) {
+        console.log(res)
+        const user = res.data;
+        page.setData(user);
+      }
+    });
+  
 
   },
 
@@ -25,9 +42,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
 
-  },
 
   /**
    * 生命周期函数--监听页面隐藏

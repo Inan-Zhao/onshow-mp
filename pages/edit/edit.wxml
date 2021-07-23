@@ -55,7 +55,7 @@
     <view class="img-as-url">
       <view class="one-info">
         <view class="biaoti">
-          <text>Or enter the url</text>
+          <text>Image url</text>
         </view>
         <input class="shuru" value="{{image_url}}" name="image_url"/>
       </view>
