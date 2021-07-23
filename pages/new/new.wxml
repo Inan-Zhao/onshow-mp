@@ -34,6 +34,13 @@
 
   <view class="one-info">
       <view class="biaoti">
+        <text>Price</text>
+      </view>
+        <input class="shuru" value="{{price}}" name="price" placeholder="¥"/>
+  </view>
+
+  <view class="one-info">
+      <view class="biaoti">
         <text>Highlight</text>
       </view>
       <input class="shuru" value="{{highlight}}" name="highlight" placeholder="Sell your show in one sentence"/>
@@ -46,9 +53,20 @@
       <input class="shuru" value="{{description}}" name="description" placeholder="Briefly describe your show"/>
   </view>
 
+  <view class="group">
+    <view class="img-as-url">
+      <view class="one-info">
+        <view class="biaoti">
+          <text>Or enter the url</text>
+        </view>
+        <input class="shuru" value="{{image_url}}" name="image_url" placeholder="url"/>
+      </view>
+    </view>
 
-  <view class="img-holder">
-    <button class="btn-upload-img w20 ma0" bindtap="upload">upload poster</button>
+    <view class="img-holder">
+      <button class="btn-upload-img w20 ma0" bindtap="upload">upload poster</button>
+    </view>
   </view>
+  
   <button class="btn-submit" form-type="submit">Submit</button>
 </form>
