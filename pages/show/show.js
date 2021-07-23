@@ -35,6 +35,14 @@ Page({
       url: `/pages/edit/edit?id=${id}`
     })
   },
+
+  goToPurchasePage(e) {
+    console.log(e)
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/purchase/purchase?id=${id}`
+    })
+  },
   
   // binded to delete button
   deletePerformance(e) {

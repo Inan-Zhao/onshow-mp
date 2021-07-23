@@ -26,7 +26,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const page = this;
+    wx.request({
+      url: `http://localhost:3000/api/v1/performances/${page.options.id}`,
+      method: 'GET',
+      success(res) {
+        // console.log(res)
+        const performance = res.data;
+        // console.log(performance)
+        page.setData(performance);
+        wx.setNavigationBarTitle({
+          title: "Confirm Ticket",
+        });
+        wx.hideToast();
+      }
+    });
   },
 
   /**

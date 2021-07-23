@@ -1,2 +1,26 @@
 <!--pages/purchase/purchase.wxml-->
-<text>pages/purchase/purchase.wxml</text>
+<view class="head">
+  <view class="h2">Confirm Ticket</view>
+  <view class="h3">{{name}}</view>
+  <view class="p">{{city}} | {{venue}}</view>
+</view>
+
+<view class="info">
+  <view class="h3">Performance Info</view>
+  <!-- little tick icon here maybe? -->
+  <view class="info-content">
+    <view class="p">Date: {{date}}</view>
+    <view class="p">Venue: {{venue}}</view>
+    <view class="p">Price: {{price}}</view>
+  </view>
+</view>
+
+<view class="payment">
+  <view class="h3">Payment method</view>
+  <!-- 4 icons -->
+</view>
+
+<view class="bottom">
+  {{price}}
+  <view class="botton"></view>
+</view>
