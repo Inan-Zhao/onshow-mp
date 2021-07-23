@@ -1,12 +1,14 @@
 <!--pages/show/show.wxml-->
 <view class="div-relative">
   <view class="div-with-bg">
-    <view class="mt120 ml300 f32 bold tc" >
-      <text style="font-style: italic w50">{{name}}</text>
-    </view>
-    <view class="mt20 ml400 f32 display: flex justify-content: space-between">
-      <icon class="iconfont icon-map"></icon>
-      <text class="pa f28">{{city}}</text>
+    <view class='mt135 ml300 name-and-city'>
+      <view class="f32 bold tc" >
+        <text style="font-style: italic w50">{{name}}</text>
+      </view>
+      <view class="f32 tc">
+        <icon class="iconfont icon-map"></icon>
+        <text class="pa f28">{{city}}</text>
+      </view>
     </view>
   </view>
 

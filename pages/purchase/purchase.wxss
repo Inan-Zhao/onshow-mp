@@ -1,19 +1,40 @@
 /* pages/purchase/purchase.wxss */
+/* pages/show/show.wxss */
+
 @font-face {
   font-family: 'iconfont';  /* Project id 2692746 */
-  src: url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.woff2?t=1626932668312') format('woff2'),
-       url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.woff?t=1626932668312') format('woff'),
-       url('//at.alicdn.com/t/font_2692746_rybarg6zdj9.ttf?t=1626932668312') format('truetype');
+  src: url('//at.alicdn.com/t/font_2692746_ehuqzihaorg.woff2?t=1627024788870') format('woff2'),
+       url('//at.alicdn.com/t/font_2692746_ehuqzihaorg.woff?t=1627024788870') format('woff'),
+       url('//at.alicdn.com/t/font_2692746_ehuqzihaorg.ttf?t=1627024788870') format('truetype');
 }
 
 .iconfont{
   font-family: 'iconfont';
-  color: rgb(187, 101, 101);
-  font-size: 25px;
+  font-size: 20px;
 }
 
-.icon-map::before{
-  content: '\e629';
+.icon-check::before{
+  content: '\e63a';
+  size: 20%;
+  color: #1296db;
+}
+
+.icon-alipay::before{
+  content: '\e608';
+  size: 100%;
+  color: blue;
+}
+
+.icon-wechat::before{
+  content: '\e607';
+  size: 100%;
+  color: green;
+}
+
+.icon-master::before{
+  content: '\e952';
+  size: 100%;
+  color: orange;
 }
 
 
@@ -27,32 +48,8 @@
   position: absolute;
   z-index: 60;
   width: 800rpx; 
-  height: 400rpx; 
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.div-with-bg::before {    
-  content: "";
-  background-color: rgb(197, 100, 100);
-  background-size: contain;
-  resize: both;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-}
-
-.poster-img {
-  position: absolute;
-  z-index: 80;
-  width: 300rpx; 
-  height: 300rpx;
-  top: 50px;
-  left: 35px;
-  border-radius: 10px;
-  overflow: hidden;
+  height: 500rpx; 
+  background-color: rgba(230, 88, 199, 0.705);
 }
 
 .bg-white {
@@ -60,10 +57,15 @@
   z-index: 70;
   background-color: white;
   border-radius: 30px;
-  position:absolute;
-  top: 150px;
+  top: 180px;
   width: 414px;
   height: 600px;
+}
+
+.one-line {
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 .black {
@@ -72,21 +74,25 @@
 
 .bottom {
   display: flex;
-  align-content: space-between;
+  align-content: center;
 }
 
-.btn-edit {
-  background-color: white;
-  width: 70px !important;
+.info-content {
+  text-align: left;
+  padding-left: 15px;
+  line-height:2.5;
 }
 
-.btn-delete {
-  background-color: white;
-  width: 100px !important;
-}
-
-.btn-purchase {
+.btn-submit {
   color: white;
   background-color: #FB3292;
   width: auto;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
 }

@@ -1,28 +1,55 @@
 <!--pages/purchase/purchase.wxml-->
-<view class="head">
-  <view class="h2">Confirm Ticket</view>
-  <view class="h3">{{name}}</view>
-  <view class="p">{{city}} | {{venue}}</view>
-</view>
+<view class="div-relative">
+  <view class="div-with-bg">
+    <view class="mt120 f36 normal white tc">
+      <text style="font-style: italic w50 font-weight: bold">Confirm Ticket</text>
+      <view class="justify-content: center; align-items: center" style="font-style: italic w50">
+        <view class="mt50 f32 white">
+          <view><text style="font-style: italic w50">{{name}}</text></view>
+          <!-- <view><text style="font-style: italic w20">{{venue}}</text></view> -->
+        </view>
+      </view>
+    </view>
+  </view>
 
-<view class="info">
-  <view class="h3">Performance Info</view>
-  <!-- little tick icon here maybe? -->
-  <view class="info-content">
-    <view class="p">Date: {{date}}</view>
-    <view class="p">Venue: {{venue}}</view>
-    <view class="p">Price: {{price}}</view>
+  <view class="bg-white">
+    <view class="pl30 pt100 pb20 bold">Performance Info</view>
+    <view class="info-content">
+
+      <view class="one-line">
+        <view><icon class="iconfont icon-check"></icon></view>
+        <view class="ml20">Name: {{name}}</view>
+      </view>
+
+      <view class="one-line">
+        <view><icon class="iconfont icon-check"></icon></view>
+        <view class="ml20">Date: {{date}}</view>
+      </view>
+
+      <view class="one-line">
+        <view><icon class="iconfont icon-check"></icon></view>
+        <view class="ml20">Price: {{price}}</view>
+      </view>
+
+      <view class="one-line">
+        <view class="mt0"><icon class="iconfont icon-check"></icon></view>
+        <view class="ml20">Venue: {{venue}}</view>
+      </view>
+
+    </view>
+    
+    <view class="ml30 mt50 pb30 bold">Payment method</view>
+    <view class="payment">
+      <view><icon class="iconfont icon-alipay"></icon></view>
+      <view><icon class="iconfont icon-wechat"></icon></view>
+      <view><icon class="iconfont icon-master"></icon></view>
+    </view>
+
+    <view class="bottom">
+      <button class='btn-submit mt60' bindtap="goToIndexPage">Submit</button>
+    </view>
   </view>
 </view>
+  
 
-<view class="payment">
-  <view class="h3">Payment method</view>
-  <!-- 4 icons -->
-</view>
 
-<view class="bottom">
-  {{price}}
-  <view class="botton"></view>
-</view>
-
-<button class='btn-submit' bindtap="goToIndexPage">Submit</button>

@@ -64,6 +64,7 @@
     </view>
 
     <view class="img-holder">
+      <image src="{{tempFilePaths[0]}}" />
       <button class="btn-upload-img w20 ma0" bindtap="upload">upload poster</button>
     </view>
   </view>
