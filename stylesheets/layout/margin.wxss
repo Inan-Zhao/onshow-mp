@@ -52,6 +52,7 @@
 .ml60 { margin-left: 60rpx !important; }
 .ml80 { margin-left: 80rpx !important; }
 .ml100 { margin-left: 100rpx !important; }
+.ml120 { margin-left: 120rpx !important; }
 .ml200 { margin-left: 200rpx !important; }
 .ml300 { margin-left: 300rpx !important; }
 .ml400 { margin-left: 400rpx !important; }
@@ -117,6 +118,7 @@
 .pl0 { padding-left: 0 !important; }
 .pl { padding-left: 10rpx !important; }
 .pl20 { padding-left: 20rpx !important; }
+.pl25 { padding-left: 25rpx !important; }
 .pl30 { padding-left: 30rpx !important; }
 .pl40 { padding-left: 40rpx !important; }
 .pl50 { padding-left: 50rpx !important; }

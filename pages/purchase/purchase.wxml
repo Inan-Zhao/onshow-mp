@@ -24,3 +24,5 @@
   {{price}}
   <view class="botton"></view>
 </view>
+
+<button class='btn-submit' bindtap="goToIndexPage">Submit</button>
