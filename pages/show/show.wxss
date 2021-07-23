@@ -32,6 +32,12 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.name-and-city {
+
+  justify-content: center;
+  align-items: center;
+}
+
 .div-with-bg::before {    
   content: "";
   background-image: url('https://cdn.pixabay.com/photo/2017/08/28/17/39/poster-2690541_960_720.png');
