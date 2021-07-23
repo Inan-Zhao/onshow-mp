@@ -2,7 +2,7 @@
 Page({
 
   formSubmit: function(e) {
-    // console.log(e)
+    console.log(e)
 
     let performance = {
       name: e.detail.value.name,
@@ -15,14 +15,14 @@ Page({
       image_url: e.detail.value.image_url,
       user_id: 1
     };
-
+    console.log(performance)
     wx.request({
       url: `http://localhost:3000/api/v1/performances`,
       // url: `https://rbnb-theatre.herokuapp.com/api/v1/performances`,
       method: 'POST',
       data: performance,
       success(res) {
-        // console.log(res);
+        console.log(res);
         // redirect to index page when done
         // when you have tab use tabBar
         wx.switchTab({
